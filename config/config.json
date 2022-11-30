@@ -1,0 +1,36 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "plankdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "port": 5432,
+    "jwtSecret":"jwtSecret12345",
+    "JWT_ALGO":"RS256",
+    "saltRounds": 2 ,
+    "tokenExpireTime": "6h"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "jwtSecret":"jwtSecret12345",
+    "JWT_ALGO":"RS256",
+    "saltRounds": 2 ,
+    "tokenExpireTime": "6h"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "jwtSecret":"jwtSecret12345",
+    "JWT_ALGO":"RS256",
+    "saltRounds": 2 ,
+    "tokenExpireTime": "6h"
+  }
+}
