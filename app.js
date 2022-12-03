@@ -3,7 +3,7 @@ const { sequelize, User } = require("./models"); // import models
 var rfs = require("rotating-file-stream"); // version 2.x
 var morgan = require("morgan");
 var path = require("path");
-const router = require("./router");
+const router = require("./routes");
 var cors = require("cors");
 const app = express(); // create a new express app
 app.use(express.json());

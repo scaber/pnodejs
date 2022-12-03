@@ -1,8 +1,8 @@
-const authController = require("./controllers/auth");
-const userController = require("./controllers/user");
+const authController = require("../controllers/auth");
+const userController = require("../controllers/user");
 
-const authMiddleware = require("./middlewares/auth");
-const { checkAuth } = require("./middlewares/auth");
+const authMiddleware = require("../middlewares/auth");
+const { checkAuth } = require("../middlewares/auth");
 
 module.exports.set = (app) => {
   app.post("/auth/login", authController.login);
