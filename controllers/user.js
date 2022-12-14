@@ -1,7 +1,8 @@
 const userService = require("../services/user");
 
 function getUsers(req, res) {
-  return userService.getUsers().then((data) => res.send(data));
+  let searchText = req.query.searchText;
+  return userService.getUsers(searchText).then((data) => res.send(data));
 }
 
 function getUser(req, res) {
