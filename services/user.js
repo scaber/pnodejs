@@ -3,7 +3,7 @@ const { Op } = require("sequelize");
 const addUser = (user) => User.create(user);
 const getUser = (userName) => User.findOne({ where: { userName } });
 
-const getUsers = async (searchText) => {
+const getUsers = async (searchText = "") => {
   const users = User.findAll({
     where: {
       [Op.or]: [
